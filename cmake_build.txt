@@ -1,0 +1,120 @@
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake
+$ cd study_cmake/
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ cmake .
+CMake Error: The current CMakeCache.txt directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/CMakeCache.txt is different than the directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeCache.txt  Makefile               cmake_install.cmake  test_01.exe
+CMakeLists.txt  cmake_build_error.txt  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ cmake  CMakeLists.txt
+CMake Error: The current CMakeCache.txt directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/CMakeCache.txt is different than the directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/CMakeLists.txt" does not match the source "/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ LS
+CMakeCache.txt  Makefile               cmake_install.cmake  test_01.exe
+CMakeLists.txt  cmake_build_error.txt  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeCache.txt  Makefile               cmake_install.cmake  test_01.exe
+CMakeLists.txt  cmake_build_error.txt  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ cmake .
+CMake Error: The current CMakeCache.txt directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/CMakeCache.txt is different than the directory /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ rm CMakeCache.txt
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeLists.txt  Makefile  cmake_build_error.txt  cmake_install.cmake  hello.cpp  test_01.exe
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ rm cmake_build_error.txt
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeLists.txt  Makefile  cmake_install.cmake  hello.cpp  test_01.exe
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ rm test_01.exe
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeLists.txt  Makefile  cmake_install.cmake  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ rm cmake_install.cmake
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeLists.txt  Makefile  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ rm Makefile
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ cmake .
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+CMake Warning at /usr/share/cmake-3.17.3/Modules/Platform/CYGWIN.cmake:15 (message):
+  CMake no longer defines WIN32 on Cygwin!
+
+  (1) If you are just trying to build this project, ignore this warning or
+  quiet it by setting CMAKE_LEGACY_CYGWIN_WIN32=0 in your environment or in
+  the CMake cache.  If later configuration or build errors occur then this
+  project may have been written under the assumption that Cygwin is WIN32.
+  In that case, set CMAKE_LEGACY_CYGWIN_WIN32=1 instead.
+
+  (2) If you are developing this project, add the line
+
+    set(CMAKE_LEGACY_CYGWIN_WIN32 0) # Remove when CMake >= 2.8.4 is required
+
+  at the top of your top-level CMakeLists.txt file or set the minimum
+  required version of CMake to 2.8.4 or higher.  Then teach your project to
+  build on Cygwin without WIN32.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.17.3/Modules/CMakeSystemSpecificInformation.cmake:26 (include)
+  CMakeLists.txt:4 (project)
+
+
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ make
+make-dummy-cert  make.exe         makecab.exe
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ ls
+CMakeCache.txt  CMakeFiles  CMakeLists.txt  Makefile  cmake_install.cmake  hello.cpp
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$ make
+Scanning dependencies of target test_01
+[ 50%] Building CXX object CMakeFiles/test_01.dir/hello.cpp.o
+[100%] Linking CXX executable test_01.exe
+[100%] Built target test_01
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake
+$

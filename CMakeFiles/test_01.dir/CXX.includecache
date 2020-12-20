@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/hello.cpp
+iostream
+/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/iostream
+
