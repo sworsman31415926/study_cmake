@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake/src/a.c
+a.h
+/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake/src/a.h
+
+include/a.h
+math.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe   -Wl,--enable-auto-import CMakeFiles/../bin/bin.dir/src/a.o CMakeFiles/../bin/bin.dir/src/main.o  -o ../bin/bin.exe -Wl,--out-implib,lib../bin/bin.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -llibm.so 

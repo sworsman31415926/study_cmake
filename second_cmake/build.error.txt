@@ -1,0 +1,73 @@
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake
+$ cmake .
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+CMake Warning at /usr/share/cmake-3.17.3/Modules/Platform/CYGWIN.cmake:15 (message):
+  CMake no longer defines WIN32 on Cygwin!
+
+  (1) If you are just trying to build this project, ignore this warning or
+  quiet it by setting CMAKE_LEGACY_CYGWIN_WIN32=0 in your environment or in
+  the CMake cache.  If later configuration or build errors occur then this
+  project may have been written under the assumption that Cygwin is WIN32.
+  In that case, set CMAKE_LEGACY_CYGWIN_WIN32=1 instead.
+
+  (2) If you are developing this project, add the line
+
+    set(CMAKE_LEGACY_CYGWIN_WIN32 0) # Remove when CMake >= 2.8.4 is required
+
+  at the top of your top-level CMakeLists.txt file or set the minimum
+  required version of CMake to 2.8.4 or higher.  Then teach your project to
+  build on Cygwin without WIN32.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.17.3/Modules/CMakeSystemSpecificInformation.cmake:26 (include)
+  CMakeLists.txt:3 (PROJECT)
+
+
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at CMakeLists.txt:35 (ADD_EXECUTABLE):
+  Policy CMP0037 is not set: Target names should not be reserved and should
+  match a validity pattern.  Run "cmake --help-policy CMP0037" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  The target name "../bin/bin" is reserved or not valid for certain CMake
+  features, such as generator expressions, and may result in undefined
+  behavior.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.17)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake
+
+tssh@DESKTOP-9LP9IL5 /cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake
+$
+...................................
+Scanning dependencies of target bin
+[ 50%] Building CXX object CMakeFiles/../bin/bin.dir/src/main.o
+/cygdrive/c/Users/tssh/source/repos/Project1/write_cmake/study_cmake/second_cmake/src/main.cpp:21:1: error: expected unqualified-id before ‘/’ token
+   21 | /src/a.c
+      | ^
+make[2]: *** [CMakeFiles/../bin/bin.dir/build.make:83: CMakeFiles/../bin/bin.dir/src/main.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:96: CMakeFiles/../bin/bin.dir/all] Error 2
+make: *** [Makefile:104: all] Error 2
